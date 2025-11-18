@@ -1,0 +1,132 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif; /* Font family */
+    background-color: #f0f2f5; /* Light gray background */
+    margin: 0; /* Remove default margin */
+    display: flex; /* Flexbox layout */
+}
+
+/* Sidebar Styles */
+.sidebar {
+    width: 250px; /* Fixed width for sidebar */
+    height: 100vh; /* Full height */
+    background: linear-gradient(to bottom, #1a73e8, #4285f4); /* Gradient background */
+    color: white; /* White text in sidebar */
+    padding: 20px; /* Padding around content */
+    position: fixed; /* Fixed position */
+}
+
+.sidebar h2 {
+    text-align: center; /* Centered heading */
+    color: #ffffff; /* White text for the heading */
+    font-weight: 600; /* Bold font */
+    font-size: 24px; /* Font size for heading */
+    margin-bottom: 30px; /* Margin below heading */
+}
+
+.sidebar ul {
+    list-style: none; /* Remove bullet points */
+    padding: 0; /* Remove padding */
+}
+
+.sidebar ul li {
+    margin: 20px 0; /* Spacing between links */
+}
+
+.sidebar ul li a {
+    color: white; /* Soft grayish-blue for links */
+    text-decoration: none; /* Remove underline */
+    font-size: 16px; /* Font size for links */
+    padding: 10px 20px; /* Padding for clickable area */
+    display: block; /* Block-level for easy clicking */
+    border-radius: 4px; /* Rounded corners */
+    transition: background-color 0.3s; /* Transition effect */
+}
+
+.sidebar ul li a:hover,
+.sidebar ul li a.active {
+    background-color: #1a01fe; /* Teal for hover/active state */
+    color: white; /* White text on hover */
+}
+
+/* Main Content Styles */
+.main-content {
+    margin-left: 250px; /* Space for sidebar */
+    padding: 40px; /* Padding for main content */
+    width: calc(100% - 250px); /* Adjust width */
+}
+
+.header h1 {
+    font-size: 32px; /* Header font size */
+    font-weight: 600; /* Bold font weight */
+    margin-bottom: 20px; /* Spacing below header */
+    color: #34495e; /* Dark slate blue for header */
+}
+
+/* Inventory Table Styles */
+.inventory-table {
+    width: 100%; /* Full width for the table */
+    border-collapse: collapse; /* Collapse borders */
+    margin-left: 20px; /* Space above table */
+    margin-top: 20px; 
+    border-radius: 8px; /* Rounded corners */
+    overflow: hidden; /* Clip corners */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+thead {
+    background-color: #669ddc; /* Teal for table header */
+    color: white; /* White text in header */
+}
+
+th, td {
+    padding: 12px; /* Padding for table cells */
+    text-align: left; /* Left-align text */
+    border-bottom: 1px solid #ddd; /* Light gray bottom border */
+}
+
+tr:hover {
+    background-color: #f9f9f9; /* Light gray background on row hover */
+}
+
+/* Button Styles */
+.btn-edit {
+    background-color: #3498db; /* Bright blue for edit button */
+    color: white; /* White text for edit button */
+    padding: 8px 12px; /* Padding for button */
+    border: none; /* No border */
+    border-radius: 4px; /* Rounded corners */
+    text-decoration: none; /* Remove underline */
+    transition: background-color 0.3s; /* Transition for background color */
+}
+
+.btn-edit:hover {
+    background-color: #2980b9; /* Darker blue on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .sidebar {
+        position: relative; /* Change sidebar position */
+        width: 100%; /* Full width for mobile */
+        height: auto; /* Auto height */
+    }
+
+    .main-content {
+        margin-left: 0; /* No margin for mobile */
+        width: 100%; /* Full width on mobile */
+        padding: 20px; /* Reduced padding for mobile */
+    }
+
+    .header h1 {
+        font-size: 24px; /* Smaller font size for mobile */
+    }
+
+    .inventory-table {
+        font-size: 14px; /* Smaller font size for mobile */
+    }
+
+    th, td {
+        padding: 10px; /* Reduced padding for mobile */
+    }
+}

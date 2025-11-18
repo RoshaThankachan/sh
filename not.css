@@ -1,0 +1,193 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #f4f4f4;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    color: #333;
+}
+
+.topbar {
+    width: 100%;
+    background-color: #2980b9;
+    padding: 15px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+
+.topbar h2 {
+    color: #ecf0f1;
+    text-align: center;
+    margin: 0;
+}
+
+.topbar ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+.topbar ul li {
+    padding: 10px 20px;
+}
+
+.topbar ul li a {
+    color: #ecf0f1;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px 15px;
+    display: block;
+    transition: background-color 0.3s ease;
+}
+
+.topbar ul li a:hover,
+.topbar ul li a.active {
+    background-color: #34495e;
+    border-radius: 5px;
+}
+
+.topbar ul li a i {
+    margin-right: 8px;
+}
+
+.main-content {
+    padding-top: 100px; /* Push content down to avoid overlap with the fixed topbar */
+    padding: 20px;
+    background-color: #fff;
+    flex-grow: 1;
+    
+    margin-top: 150px;
+}
+
+header {
+    background-color: #2980b9;
+    color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.notification-section {
+    background-color: #ecf0f1;
+    margin-top: 10px; /* Adds space between topbar and employee details */
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.notification-section h2 {
+    margin-bottom: 15px;
+}
+
+.notification-form input[type="email"],
+.notification-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #bdc3c7;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.notification-form textarea {
+    height: 100px;
+    resize: none;
+}
+
+.notification-form .btn {
+    background-color: #2980b9;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.notification-form .btn:hover {
+    background-color: #1f6c99;
+}
+
+.sent-notifications-section {
+    background-color: #ecf0f1;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.notification-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.notification-table th, 
+.notification-table td {
+    border: 1px solid #bdc3c7;
+    padding: 10px;
+    text-align: center;
+}
+
+.notification-table th {
+    background-color: #2980b9;
+    color: white;
+}
+
+.notification-table td {
+    background-color: #fff;
+}
+
+.notification-table tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.notification-table tbody tr:hover {
+    background-color: #d1ecf1;
+}
+
+.alert {
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.alert.success {
+    background-color: #2ecc71;
+    color: white;
+}
+
+.alert.warning {
+    background-color: #e74c3c;
+    color: white;
+}
+
+@media (max-width: 768px) {
+    .topbar ul {
+        flex-direction: column;
+    }
+
+    .topbar ul li {
+        text-align: center;
+    }
+}
+
+@media (max-width: 600px) {
+    .topbar ul li a {
+        font-size: 16px;
+        padding: 10px;
+    }
+
+    .topbar ul {
+        flex-direction: column;
+    }
+}

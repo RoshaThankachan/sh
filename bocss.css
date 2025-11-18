@@ -1,0 +1,166 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-image: url('p5.jpeg');
+    background-size: cover; /* Ensures the background covers the entire area */
+    background-repeat: no-repeat; /* Prevents the background from repeating */
+    background-position: center;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+.wrapper {
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 40px;
+    background-color: rgba(255, 255, 255, 0.8); /* Slight transparency for a glass-like effect */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
+    backdrop-filter: blur(8px); /* Slight background blur for glassmorphism */
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.wrapper:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+}
+
+h2 {
+    text-align: center;
+    color: #2c3e50;
+    margin-bottom: 30px;
+    font-size: 2.2rem;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Form Styling */
+.booking-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.input-field {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.input-field label {
+    font-size: 1rem;
+    color: #34495e;
+    font-weight: 600;
+}
+
+.input-field select,
+.input-field input[type="text"],
+.input-field input[type="date"],
+.input-field input[type="time"],
+.input-field input[type="number"],
+.input-field textarea {
+    width: 100%;
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    font-size: 1rem;
+    background-color: rgba(255, 255, 255, 0.9);
+    transition: border 0.3s ease, background-color 0.3s ease;
+}
+
+/* Focused state with enhanced styling */
+.input-field select:focus,
+.input-field input:focus,
+.input-field textarea:focus {
+    border-color: #3498db;
+    background-color: #eaf4fb; /* Light blue background when focused */
+    outline: none;
+    box-shadow: 0 0 5px rgba(52, 152, 219, 0.3); /* Soft focus glow */
+}
+
+/* Style the selected option in the dropdown */
+.input-field select option:checked {
+    background-color: #3498db;
+    color: white;
+}
+
+textarea {
+    resize: vertical;
+    height: 50px;
+}
+
+/* Checkbox Styles */
+.addon-services {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.addon-services div {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+input[type="checkbox"] {
+    width: 18px;
+    height: 18px;
+}
+
+/* Submit Button Styling */
+button[type="submit"] {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 14px 20px;
+    font-size: 1rem;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    font-weight: bold;
+}
+
+button[type="submit"]:hover {
+    background-color: #2980b9;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15); /* Shadow effect on hover */
+}
+
+button:focus {
+    outline: none;
+    box-shadow: 0 0 10px rgba(52, 152, 219, 0.5);
+}
+
+/* Message Styles */
+.message-container {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.error-message {
+    color: #e74c3c;
+    background-color: #f9ebea;
+    padding: 12px;
+    border-radius: 5px;
+}
+
+.success-message {
+    color: #27ae60;
+    background-color: #eafaf1;
+    padding: 12px;
+    border-radius: 5px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .wrapper {
+        padding: 20px;
+    }
+
+    .addon-services {
+        flex-direction: column;
+    }
+
+    h2 {
+        font-size: 1.8rem;
+    }
+}

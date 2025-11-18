@@ -1,0 +1,48 @@
+/* Add-on Services section styling */
+.input-field {
+    margin-bottom: 20px;
+}
+
+.input-field label {
+    display: block;
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.addon-services {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px; /* Adds space between items */
+}
+
+.addon-services div {
+    display: flex;
+    align-items: center;
+    padding: 5px 10px;
+    background-color: #f9f9f9;
+    border-radius: 6px;
+    border: 1px solid #ddd;
+    width: calc(50% - 10px); /* Two columns layout */
+    box-sizing: border-box;
+}
+
+.addon-services input[type="checkbox"] {
+    margin-right: 8px;
+    cursor: pointer;
+}
+
+.addon-services input[type="checkbox"]:hover {
+    outline: 1px solid #007bff;
+}
+
+.addon-services div:hover {
+    background-color: #f0f8ff; /* Adds a hover effect on the boxes */
+}
+
+@media (max-width: 768px) {
+    .addon-services div {
+        width: 100%; /* On small screens, use a single column layout */
+    }
+}

@@ -1,0 +1,270 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif; /* Font family */
+    background-color: #f0f2f5; /* Light gray background */
+    margin: 0; /* Remove default margin */
+    display: flex; /* Flexbox layout */
+}
+
+/* Sidebar Styles */
+.sidebar {
+    width: 250px; /* Fixed width for sidebar */
+    height: 100vh; /* Full height */
+    background: linear-gradient(to bottom, #1a73e8, #4285f4); /* Gradient background */
+    color: white; /* White text in sidebar */
+    padding: 20px; /* Padding around content */
+    position: fixed; /* Fixed position */
+    box-shadow: 4px 0 12px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease;
+    overflow-y: auto; /* Adds a scrollbar if content overflows */
+}
+
+.sidebar h2 {
+    text-align: center; /* Centered heading */
+    color: #ffffff; /* White text for the heading */
+    font-weight: 700; /* Bold font */
+    font-size: 26px; /* Font size for heading */
+    margin-bottom: 30px; /* Margin below heading */
+}
+
+.sidebar ul {
+    list-style: none; /* Remove bullet points */
+    padding: 0; /* Remove padding */
+}
+
+.sidebar ul li {
+    margin: 20px 0; /* Spacing between links */
+}
+
+.sidebar ul li a {
+    color: white; /* Soft grayish-blue for links */
+    text-decoration: none; /* Remove underline */
+    font-size: 16px; /* Font size for links */
+    padding: 12px 20px; /* Padding for clickable area */
+    display: block; /* Block-level for easy clicking */
+    border-radius: 6px; /* Rounded corners */
+    transition: background-color 0.3s; /* Transition effect */
+}
+
+.sidebar ul li a:hover,
+.sidebar ul li a.active {
+    background-color: #1a01fe; /* Teal for hover/active state */
+    color: white; /* White text on hover */
+}
+/* Scrollbar styles for WebKit browsers */
+.sidebar::-webkit-scrollbar {
+    width: 8px; /* Width of the scrollbar */
+}
+
+.sidebar::-webkit-scrollbar-track {
+    background: #1a73e8; /* Track color */
+    border-radius: 10px; /* Rounded corners */
+}
+
+.sidebar::-webkit-scrollbar-thumb {
+    background-color: #ffffff; /* Scroll thumb color */
+    border-radius: 10px; /* Rounded corners */
+    border: 2px solid #1a73e8; /* Adds space around thumb */
+}
+
+/* Scrollbar styles for Firefox */
+.sidebar {
+    scrollbar-color: #ffffff #1a73e8; /* Thumb color, Track color */
+    scrollbar-width: 12px; /* Thicker scrollbar width */
+}
+
+
+/* Main Content Styles */
+.main-content {
+   margin-left: 200px;
+    padding: 40px;
+    width: calc(100% - 250px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #ffffff;
+    min-height: 100vh;
+    transition: margin-left 0.3s;
+}
+
+.header h1 {
+    font-size: 32px;
+    font-weight: 700;
+    color:#007bff;
+    margin: 0;
+    padding: 15px 0;
+    text-align: center;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.header {
+    width: 100%; /* Full width for header */
+    display: flex;
+    justify-content: center; /* Center header content */
+}
+.header p {
+    font-size: 18px;
+    color: #666;
+    margin: 5px 0 20px;
+    text-align: center;
+}
+
+
+/* Search Bar */
+.search-bar {
+    margin-bottom: 30px;
+    width: 100%;
+    max-width: 800px;
+}
+
+.search-bar input {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s;
+}
+
+.search-bar input:focus {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    outline: none;
+}
+
+/* General Table Styles */
+.customers-table {
+    width: 100%;
+    max-width: 900px; /* Limit the width */
+    margin-top: 20px; /* Space above the table */
+    border-collapse: collapse; /* Remove space between cells */
+    border-radius: 8px; /* Rounded corners */
+    overflow: hidden; /* Clip rounded corners */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    background-color: #fff; /* White background */
+}
+
+/* Header Row Styles */
+.customers-table thead {
+    background-color: #007bff; /* Blue header background */
+    color: #ffffff; /* White text for header */
+}
+
+.customers-table thead th {
+    padding: 12px 8px; /* Adjust header padding */
+    font-weight: bold; /* Bold font */
+    font-size: 14px; /* Slightly smaller font size */
+    text-align: left; /* Left-align header text */
+}
+
+/* Table Body Styles */
+.customers-table tbody tr {
+    transition: background-color 0.2s ease; /* Transition for hover effect */
+}
+
+.customers-table tbody tr:nth-child(even) {
+    background-color: #f8f8f8; /* Light gray for even rows */
+}
+
+.customers-table tbody tr:hover {
+    background-color: #f1f5f9; /* Subtle hover background */
+}
+
+/* Table Cell Styles */
+.customers-table td {
+    padding: 12px 8px; /* Padding inside cells */
+    font-size: 14px; /* Font size */
+    color: #333; /* Dark gray text */
+    border-bottom: 1px solid #ddd; /* Light border below each row */
+    text-align: left; /* Left-align cell text */
+}
+
+/* Action Button Styles */
+.customers-table .view-btn {
+    color:#007bff;/* Blue color for view button */
+    text-decoration: none; /* Remove underline */
+    font-weight: bold; /* Bold text */
+    padding: 6px 10px; /* Padding around the button */
+    border-radius: 4px; /* Rounded button corners */
+    transition: color 0.2s ease, background-color 0.2s ease; /* Transition for hover */
+}
+
+.customers-table .view-btn:hover {
+    background-color: #007bff; /* Blue background on hover */
+    color: #ffffff; /* White text on hover */
+}
+
+/* Remove Extra Space in the Actions Column */
+.customers-table td:last-child {
+    padding-right: 0; /* Remove right padding */
+    width: 1%; /* Shrink width to fit content */
+    text-align: center; /* Center-align the button */
+}
+
+/* Responsive Design for Smaller Screens */
+@media (max-width: 768px) {
+    .customers-table {
+        font-size: 12px; /* Smaller font on mobile */
+    }
+
+    .customers-table thead th, 
+    .customers-table td {
+        padding: 10px 5px; /* Reduce padding on mobile */
+    }
+}
+
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .sidebar {
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+
+    .main-content {
+        margin-left: 0;
+        width: 100%;
+        padding: 20px;
+    }
+
+    .header h1 {
+        font-size: 24px;
+    }
+
+  
+
+  
+}
+/* Actions Button Style */
+td a {
+    color:#007bff;
+    text-decoration: none;
+    font-weight: 500;
+    padding: 6px 12px;
+    border: 1px solid#007bff;
+    border-radius: 4px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+td a:hover {
+    background-color: #007bff;
+    color: white;
+}
+
+/* Button Styles */
+.btn-edit {
+    background-color:#007bff; /* Bright blue for edit button */
+    color: white; /* White text for edit button */
+    padding: 8px 12px; /* Padding for button */
+    border: none; /* No border */
+    border-radius: 4px; /* Rounded corners */
+    text-decoration: none; /* Remove underline */
+    transition: background-color 0.3s; /* Transition for background color */
+}
+
+.btn-edit:hover {
+    background-color: #007bff;/* Darker blue on hover */
+}

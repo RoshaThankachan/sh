@@ -1,0 +1,202 @@
+/* General styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f8ff;
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Align to the top */
+    min-height: 100vh; /* Allow wrapper to grow */
+    padding: 20px; /* Add padding for aesthetics */
+    overflow-y: auto; /* Allows vertical scrolling */
+}
+
+.booking-form {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    max-width: 600px;
+    width: 100%;
+    max-height: 80vh; /* Prevents the form from being too tall */
+    overflow-y: auto; /* Allows scrolling within the form if content is too tall */
+}
+
+h2 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.message-container {
+    margin-bottom: 20px;
+}
+
+.error-message, .success-message {
+    font-size: 16px;
+    padding: 10px;
+    border-radius: 4px;
+    text-align: center;
+}
+
+.error-message {
+    background-color: #f8d7da;
+    color: #721c24;
+}
+
+.success-message {
+    background-color: #d4edda;
+    color: #155724;
+}
+
+.input-field {
+    margin-bottom: 15px;
+}
+
+.input-field label {
+    display: block;
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 5px;
+}
+
+input[type="text"], input[type="date"], input[type="time"], select, textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+textarea {
+    resize: none;
+}
+
+select {
+    appearance: none;
+}
+
+.input-field select:focus, .input-field input:focus, .input-field textarea:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+/* Add-on Services section styling */
+.input-field {
+    margin-bottom: 25px;
+}
+
+.input-field label {
+    display: block;
+    font-size: 16px;
+    color: #333;
+    font-weight: 600;
+    margin-bottom: 12px;
+}
+
+/* Add-on services styling with grid layout for better alignment */
+.addon-services {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Responsive grid */
+    gap: 15px;
+}
+
+.addon-services div {
+    display: flex;
+    align-items: center;
+    padding: 12px;
+    background-color: #f7f7f7;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.addon-services div:hover {
+    background-color: #e9f3ff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15); /* Add a subtle hover effect */
+}
+
+.addon-services input[type="checkbox"] {
+    margin-right: 12px;
+    transform: scale(1.2); /* Slightly larger checkboxes for better visibility */
+    cursor: pointer;
+}
+
+.addon-services input[type="checkbox"]:hover {
+    outline: 2px solid #007bff; /* Outline effect on checkbox hover */
+}
+
+.addon-services label {
+    font-size: 14px;
+    font-weight: 500;
+    color: #555;
+}
+
+.addon-services div.selected {
+    background-color: #007bff; /* Background color when selected */
+    color: white;
+    border-color: #0056b3;
+}
+
+.addon-services div.selected input[type="checkbox"] {
+    accent-color: white;
+}
+
+/* Transition effect when hovering over the options */
+.addon-services div:hover {
+    background-color: #f0f8ff;
+    border-color: #007bff;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .addon-services div {
+        padding: 10px;
+        width: 100%; /* Make the div take full width on small screens */
+    }
+}
+
+/* Animation for when checkboxes are clicked */
+.addon-services div input[type="checkbox"]:checked + label {
+    font-weight: bold;
+    color: #007bff;
+    transition: color 0.3s ease;
+}
+
+.btn-submit {
+    background-color: #007bff;
+    color: white;
+    padding: 12px;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+}
+
+.btn-submit:hover {
+    background-color: #0056b3;
+}
+
+.logout {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.logout a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.logout a:hover {
+    text-decoration: underline;
+}

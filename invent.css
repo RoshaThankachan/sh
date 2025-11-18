@@ -1,0 +1,322 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif; /* Font family */
+    background-color: #f0f2f5; /* Light gray background */
+    margin: 0; /* Remove default margin */
+    display: flex; /* Flexbox layout */
+}
+
+/* Sidebar Styles */
+.sidebar {
+    width: 250px; /* Fixed width for sidebar */
+    height: 100vh; /* Full height */
+    background: linear-gradient(to bottom, #1a73e8, #4285f4); /* Gradient background */
+    color: white; /* White text in sidebar */
+    padding: 20px; /* Padding around content */
+    position: fixed; /* Fixed position */
+    box-shadow: 4px 0 12px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease;
+    overflow-y: auto; /* Adds a scrollbar if content overflows */
+}
+
+.sidebar h2 {
+    text-align: center; /* Centered heading */
+    color: #ffffff; /* White text for the heading */
+    font-weight: 700; /* Bold font */
+    font-size: 26px; /* Font size for heading */
+    margin-bottom: 30px; /* Margin below heading */
+}
+
+.sidebar ul {
+    list-style: none; /* Remove bullet points */
+    padding: 0; /* Remove padding */
+}
+
+.sidebar ul li {
+    margin: 20px 0; /* Spacing between links */
+}
+
+.sidebar ul li a {
+    color: white; /* Soft grayish-blue for links */
+    text-decoration: none; /* Remove underline */
+    font-size: 16px; /* Font size for links */
+    padding: 12px 20px; /* Padding for clickable area */
+    display: block; /* Block-level for easy clicking */
+    border-radius: 6px; /* Rounded corners */
+    transition: background-color 0.3s; /* Transition effect */
+}
+
+.sidebar ul li a:hover,
+.sidebar ul li a.active {
+    background-color: #1a01fe; /* Teal for hover/active state */
+    color: white; /* White text on hover */
+}
+/* Scrollbar styles for WebKit browsers */
+.sidebar::-webkit-scrollbar {
+    width: 8px; /* Width of the scrollbar */
+}
+
+.sidebar::-webkit-scrollbar-track {
+    background: #1a73e8; /* Track color */
+    border-radius: 10px; /* Rounded corners */
+}
+
+.sidebar::-webkit-scrollbar-thumb {
+    background-color: #ffffff; /* Scroll thumb color */
+    border-radius: 10px; /* Rounded corners */
+    border: 2px solid #1a73e8; /* Adds space around thumb */
+}
+
+/* Scrollbar styles for Firefox */
+.sidebar {
+    scrollbar-color: #ffffff #1a73e8; /* Thumb color, Track color */
+    scrollbar-width: 12px; /* Thicker scrollbar width */
+}
+
+
+/* Main Content Styles */
+.main-content {
+   margin-left: 200px;
+    padding: 40px;
+    width: calc(100% - 250px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #ffffff;
+    min-height: 100vh;
+    transition: margin-left 0.3s;
+}
+
+.header h1 {
+    font-size: 32px;
+    font-weight: 700;
+    color:#007bff;
+    margin: 0;
+    padding: 15px 0;
+    text-align: center;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.header {
+    width: 100%; /* Full width for header */
+    display: flex;
+    justify-content: center; /* Center header content */
+}
+.header p {
+    font-size: 18px;
+    color: #666;
+    margin: 5px 0 20px;
+    text-align: center;
+}
+
+/* Inventory Table Styles */
+
+.inventory-table {
+
+    width: 100%; /* Ensure the table expands to full width */
+    border-collapse: collapse;
+    padding: 20px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    max-width: 900px; /* Set maximum width */
+ 
+    
+}
+
+
+th, td {
+    padding: 14px;
+    text-align: left; /* Keep text aligned left */
+    border-bottom: 1px solid #ddd;
+    font-size: 16px;
+}
+
+th {
+    background-color: #007bff; /* Slightly darker header background */
+    color: white;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9; /* Alternate row color */
+}
+
+tr:hover {
+    background-color: #e3f2fd; /* Light blue on row hover */
+    transition: background-color 0.3s;
+}
+
+
+
+
+
+/* Actions Button Style */
+td a {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: 500;
+    padding: 6px 12px;
+    border: 1px solid #1976d2;
+    border-radius: 4px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+td a:hover {
+    background-color:  #007bff;
+    color: white;
+}
+
+
+
+
+/* Actions Button Style */
+td a {
+    color:#007bff;
+    text-decoration: none;
+    font-weight: 500;
+    padding: 6px 12px;
+    border: 1px solid#007bff;
+    border-radius: 4px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+td a:hover {
+    background-color: #007bff;
+    color: white;
+}
+
+/* Button Styles */
+.btn-edit {
+    background-color:#007bff; /* Bright blue for edit button */
+    color: white; /* White text for edit button */
+    padding: 8px 12px; /* Padding for button */
+    border: none; /* No border */
+    border-radius: 4px; /* Rounded corners */
+    text-decoration: none; /* Remove underline */
+    transition: background-color 0.3s; /* Transition for background color */
+}
+
+.btn-edit:hover {
+    background-color: #007bff;/* Darker blue on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .sidebar {
+        position: relative; /* Change sidebar position */
+        width: 100%; /* Full width for mobile */
+        height: auto; /* Auto height */
+    }
+
+    .main-content {
+        margin-left: 0; /* No margin for mobile */
+        width: 100%; /* Full width on mobile */
+        padding: 20px; /* Reduced padding for mobile */
+    }
+
+    .header h1 {
+        font-size: 24px; /* Smaller font size for mobile */
+    }
+
+    .inventory-table {
+        font-size: 14px; /* Smaller font size for mobile */
+    }
+
+    th, td {
+        padding: 10px; /* Reduced padding for mobile */
+    }
+}
+
+.btn-create {
+    margin-top: 10px;
+    background-color: #28a745; /* Green for create button */
+    color: white; /* White text for create button */
+    padding: 8px 12px; /* Padding for button */
+    border: none; /* No border */
+    border-radius: 4px; /* Rounded corners */
+    text-decoration: none; /* Remove underline */
+    transition: background-color 0.3s; /* Transition for background color */
+    cursor: pointer; /* Cursor pointer on hover */
+}
+
+.btn-create:hover {
+    background-color: #218838; /* Darker green on hover */
+}
+
+.btn-delete {
+    background-color: #dc3545; /* Red for delete button */
+    color: white; /* White text for delete button */
+    padding: 8px 12px; /* Padding for button */
+    border: none; /* No border */
+    border-radius: 4px; /* Rounded corners */
+    text-decoration: none; /* Remove underline */
+    transition: background-color 0.3s; /* Transition for background color */
+    cursor: pointer; /* Cursor pointer on hover */
+}
+
+.btn-delete:hover {
+    background-color: #c82333; /* Darker red on hover */
+}
+
+/* Styles for the new item form */
+.new-item-form {
+    margin-top: 20px; /* Space between table and form */
+    padding: 20px; /* Padding inside the form */
+    padding-right: 50px;
+    border: 1px solid #ccc; /* Light border around the form */
+    border-radius: 8px; /* Rounded corners */
+    background-color: #f9f9f9; /* Light background color */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    margin-bottom: 70px;
+}
+
+/* Style for form labels */
+.new-item-form label {
+    display: block; /* Labels take up full width */
+    margin-bottom: 8px; /* Space below each label */
+    font-weight: 600; /* Bold text for labels */
+}
+
+/* Style for form inputs */
+.new-item-form input[type="text"],
+.new-item-form input[type="number"] {
+    width: 100%; /* Full width of the container */
+    padding: 10px; /* Padding inside the input */
+    margin-bottom: 15px; /* Space below each input */
+    border: 1px solid #ccc; /* Light border for inputs */
+    border-radius: 4px; /* Rounded corners for inputs */
+    font-size: 16px; /* Larger font size */
+}
+
+/* Style for the submit and cancel buttons */
+.new-item-form input[type="submit"],
+.new-item-form .btn-cancel {
+    background-color: #007bff; /* Blue background for buttons */
+    color: white; /* White text for buttons */
+    padding: 10px 15px; /* Padding for buttons */
+    border: none; /* No border for buttons */
+    border-radius: 4px; /* Rounded corners for buttons */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s; /* Transition effect for background color */
+}
+
+/* Button hover effects */
+.new-item-form input[type="submit"]:hover,
+.new-item-form .btn-cancel:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* Cancel button specific style */
+.new-item-form .btn-cancel {
+    background-color: #dc3545; /* Red background for cancel button */
+}
+
+/* Cancel button hover effect */
+.new-item-form .btn-cancel:hover {
+    background-color: #c82333; /* Darker red on hover */
+}
+
+

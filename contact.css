@@ -1,0 +1,162 @@
+/* Basic Styles */
+body {
+    font-family: Arial, sans-serif; /* Font for the entire page */
+    line-height: 1.6; /* Line height for better readability */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+   
+}
+
+header {
+    display: flex; /* Flexbox for layout */
+    justify-content: space-between; /* Space between logo and nav */
+    align-items: center; /* Center items vertically */
+    background-color: #333; /* Dark background for the header */
+    padding: 10px 20px; /* Padding for the header */
+    color: #fff; /* White text color */
+}
+
+.logo h1 {
+    margin: 0; /* Remove default margin */
+    font-size: 2em; /* Logo font size */
+}
+
+nav ul {
+    list-style: none; /* Remove bullet points */
+    padding: 0; /* Remove default padding */
+    margin: 0; /* Remove default margin */
+    display: flex; /* Flexbox for horizontal alignment */
+}
+
+nav ul li {
+    margin: 0 15px; /* Spacing between menu items */
+}
+
+nav a {
+    color: white; /* White text for links */
+    text-decoration: none; /* Remove underline */
+    font-weight: bold; /* Bold text */
+    transition: color 0.3s; /* Transition for hover effect */
+}
+
+nav a:hover {
+    color: #ffcc00; /* Change color on hover */
+}
+
+.header-actions {
+    display: flex; /* Flexbox for any action items like search or icons */
+    align-items: center; /* Center items vertically */
+}
+/* Footer Styles */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+/* Contact Section */
+#contact {
+    padding: 50px 0;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#contact h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+#contact p {
+    margin-bottom: 40px;
+    font-size: 18px;
+    color: #333;
+}
+
+.contact-details {
+    margin-bottom: 30px;
+}
+
+.contact-details h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.contact-details p {
+    font-size: 16px;
+    color:  #333;
+}
+
+.contact-details a {
+    color: #0066cc;
+    text-decoration: none;
+}
+
+.contact-details a:hover {
+    text-decoration: underline;
+}
+
+/* Contact Form Styles */
+.contact-form {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    color: #333;
+    background-color: #f9f9f9;
+}
+
+.contact-form textarea {
+    height: 150px;
+    resize: none;
+}
+
+.contact-form button {
+    background-color: #0066cc;
+    color: #fff;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+    background-color: #004999;
+}
+
+/* Map Section */
+.map-section {
+    margin: 50px 0;
+    text-align: center;
+}
+
+.map-container {
+    margin-top: 20px;
+}
+
+.map-container iframe {
+    border: none;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 600px;
+}

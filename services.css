@@ -1,0 +1,249 @@
+/* Basic Styles */
+body {
+    font-family: Arial, sans-serif; /* Font for the entire page */
+    line-height: 1.6; /* Line height for better readability */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+}
+
+header {
+    display: flex; /* Flexbox for layout */
+    justify-content: space-between; /* Space between logo and nav */
+    align-items: center; /* Center items vertically */
+    background-color: #333; /* Dark background for the header */
+    padding: 10px 20px; /* Padding for the header */
+    color: #fff; /* White text color */
+}
+
+.logo h1 {
+    margin: 0; /* Remove default margin */
+    font-size: 2em; /* Logo font size */
+}
+
+nav ul {
+    list-style: none; /* Remove bullet points */
+    padding: 0; /* Remove default padding */
+    margin: 0; /* Remove default margin */
+    display: flex; /* Flexbox for horizontal alignment */
+}
+
+nav ul li {
+    margin: 0 15px; /* Spacing between menu items */
+}
+
+nav a {
+    color: white; /* White text for links */
+    text-decoration: none; /* Remove underline */
+    font-weight: bold; /* Bold text */
+    transition: color 0.3s; /* Transition for hover effect */
+}
+
+nav a:hover {
+    color: #ffcc00; /* Change color on hover */
+}
+
+.header-actions {
+    display: flex; /* Flexbox for any action items like search or icons */
+    align-items: center; /* Center items vertically */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column; /* Stack items vertically on small screens */
+        align-items: flex-start; /* Align to the left */
+    }
+
+    nav ul {
+        flex-direction: column; /* Stack menu items vertically */
+        gap: 10px; /* Space between items */
+    }
+}
+/* Services Section Styles */
+/* Services Section Styling */
+#services {
+    padding: 40px 20px;
+    background-color: #f9f9f9;
+}
+
+#services h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #2c3e50;
+}
+
+/* Add this to your ser.css */
+.service-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Responsive grid */
+    gap: 20px; /* Spacing between items */
+}
+
+.service-item {
+    background-color: #ffffff; /* White background */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    padding: 15px; /* Inner padding */
+    text-align: center; /* Center text */
+}
+
+.service-image {
+    max-width: 100%; /* Responsive image */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 5px; /* Rounded corners for images */
+}
+
+h3 {
+    color: #2c3e50; /* Dark color for headings */
+}
+
+
+
+/* Service Item Box Styling with Different Colors */
+.service-item {
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    color: white;
+    transition: transform 0.3s ease;
+}
+
+.service-item h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: white;
+}
+
+.service-item p {
+    font-size: 1rem;
+    line-height: 1.5;
+    color: white;
+}
+/* Service Item Box Styling with Enhanced Font Colors */
+.service-item {
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    color: #333; /* Default darker font color */
+    transition: transform 0.3s ease;
+}
+
+.service-item h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #2c3e50; /* Darker heading color for better contrast */
+}
+
+.service-item p {
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #2c3e50; /* Darker paragraph color */
+}
+
+/* Color Variants with Enhanced Font Colors */
+.service-item:nth-child(1) {
+    background-color: #a8d5e2; /* Pastel Blue */
+    color: #2c3e50; /* Darker text for contrast */
+}
+
+.service-item:nth-child(2) {
+    background-color: #f4a8a5; /* Pastel Red */
+    color: #2c3e50; /* Darker text */
+}
+
+.service-item:nth-child(3) {
+    background-color: #a8e6a2; /* Pastel Green */
+    color: #2c3e50; /* Darker text */
+}
+
+.service-item:nth-child(4) {
+    background-color: #f9e8a8; /* Pastel Yellow */
+    color: #2c3e50; /* Darker text */
+}
+
+.service-item:nth-child(5) {
+    background-color: #d8a8e2; /* Pastel Purple */
+    color: #2c3e50; /* Darker text */
+}
+
+.service-item:nth-child(6) {
+    background-color: #f7caa2; /* Pastel Orange */
+    color: #2c3e50; /* Darker text */
+}
+
+.service-item:nth-child(7) {
+    background-color: #a8e2d0; /* Pastel Teal */
+    color: #2c3e50; /* Darker text */
+}
+
+.service-item:nth-child(8) {
+    background-color: #b1bccf; /* Pastel Dark Blue */
+    color: #2c3e50; /* Darker text */
+}
+
+.service-item:nth-child(9) {
+    background-color: #f6c8e2; /* Pastel Pink */
+    color: #2c3e50; /* Darker text */
+}
+.service-item:nth-child(10) {
+    background-color: #c8def6; /* Pastel Pink */
+    color: #2c3e50; /* Darker text */
+}
+.service-item:nth-child(11) {
+    background-color: #c8f6cc; /* Pastel Pink */
+    color: #2c3e50; /* Darker text */
+}
+.service-item:nth-child(12) {
+    background-color: #f6e2c8; /* Pastel Pink */
+    color: #2c3e50; /* Darker text */
+}
+.service-item:nth-child(13) {
+    background-color: #c8cff6; /* Pastel Pink */
+    color: #2c3e50; /* Darker text */
+}
+.service-item:nth-child(14) {
+    background-color: #def6c8; /* Pastel Pink */
+    color: #2c3e50; /* Darker text */
+}
+.service-item:nth-child(15) {
+    background-color: #f6c8c8; /* Pastel Pink */
+    color: #2c3e50; /* Darker text */
+}
+.service-item:nth-child(16) {
+    background-color: #c8e1f6; /* Pastel Pink */
+    color: #2c3e50; /* Darker text */
+}
+.service-item:nth-child(17) {
+    background-color: #c8f6ca; /* Pastel Pink */
+    color: #2c3e50; /* Darker text */
+}
+.service-item:nth-child(18) {
+    background-color: #c8f6eb; /* Pastel Pink */
+    color: #2c3e50; /* Darker text */
+}
+.service-item:nth-child(19) {
+    background-color: #e2c8f6; /* Pastel Pink */
+    color: #2c3e50; /* Darker text */
+}
+.service-item:nth-child(20) {
+    background-color: #c8f6f2; /* Pastel Pink */
+    color: #2c3e50; /* Darker text */
+}
+/* Footer Styles */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+.footer-content p {
+    color: white;
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    unicode-bidi: isolate;
+}

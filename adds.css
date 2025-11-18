@@ -1,0 +1,302 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif; /* Font family */
+    background-color: #f0f2f5; /* Light gray background */
+    margin: 0; /* Remove default margin */
+    display: flex; /* Flexbox layout */
+}
+
+/* Sidebar Styles */
+.sidebar {
+    width: 250px; /* Fixed width for sidebar */
+    height: 100vh; /* Full height */
+    background: linear-gradient(to bottom, #1a73e8, #4285f4); /* Gradient background */
+    color: white; /* White text in sidebar */
+    padding: 20px; /* Padding around content */
+    position: fixed; /* Fixed position */
+    box-shadow: 4px 0 12px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease;
+    overflow-y: auto; /* Adds a scrollbar if content overflows */
+}
+
+.sidebar h2 {
+    text-align: center; /* Centered heading */
+    color: #ffffff; /* White text for the heading */
+    font-weight: 700; /* Bold font */
+    font-size: 26px; /* Font size for heading */
+    margin-bottom: 30px; /* Margin below heading */
+}
+
+.sidebar ul {
+    list-style: none; /* Remove bullet points */
+    padding: 0; /* Remove padding */
+}
+
+.sidebar ul li {
+    margin: 20px 0; /* Spacing between links */
+}
+
+.sidebar ul li a {
+    color: white; /* Soft grayish-blue for links */
+    text-decoration: none; /* Remove underline */
+    font-size: 16px; /* Font size for links */
+    padding: 12px 20px; /* Padding for clickable area */
+    display: block; /* Block-level for easy clicking */
+    border-radius: 6px; /* Rounded corners */
+    transition: background-color 0.3s; /* Transition effect */
+}
+
+.sidebar ul li a:hover,
+.sidebar ul li a.active {
+    background-color: #1a01fe; /* Teal for hover/active state */
+    color: white; /* White text on hover */
+}
+/* Scrollbar styles for WebKit browsers */
+.sidebar::-webkit-scrollbar {
+    width: 8px; /* Width of the scrollbar */
+}
+
+.sidebar::-webkit-scrollbar-track {
+    background: #1a73e8; /* Track color */
+    border-radius: 10px; /* Rounded corners */
+}
+
+.sidebar::-webkit-scrollbar-thumb {
+    background-color: #ffffff; /* Scroll thumb color */
+    border-radius: 10px; /* Rounded corners */
+    border: 2px solid #1a73e8; /* Adds space around thumb */
+}
+
+/* Scrollbar styles for Firefox */
+.sidebar {
+    scrollbar-color: #ffffff #1a73e8; /* Thumb color, Track color */
+    scrollbar-width: 12px; /* Thicker scrollbar width */
+}
+
+/* Main Content Styles */
+.main-content {
+    margin-left: 250px; /* Added left margin to offset the sidebar */
+    padding: 40px;
+    width: calc(100% - 250px); /* Ensure the content doesn't overflow */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #ffffff;
+    min-height: 100vh;
+    transition: margin-left 0.3s;
+}
+
+.main-content h1
+ {
+    font-size: 32px;
+    font-weight: 700;
+    color:#007bff;
+    margin: 0;
+    padding: 15px 0;
+    text-align: center;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.header {
+    width: 100%; /* Full width for header */
+    display: flex;
+    justify-content: center; /* Center header content */
+}
+. h1 {
+    font-size: 32px;
+    font-weight: 700;
+    color:#007bff;
+    margin: 0;
+    padding: 15px 0;
+    text-align: center;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+.header p {
+    font-size: 18px;
+    color: #666;
+    margin: 5px 0 20px;
+    text-align: center;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-left: 150px;
+    margin-top: 20px;
+    margin-right: 100px;
+    margin-bottom: 100px;
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 12px;
+    text-align: center;
+}
+
+th {
+    background-color: #007bff;
+    color: #fff;
+    font-weight: bold;
+}
+
+tr:nth-child(even) {
+    background-color: #f8f9fa;
+}
+
+tr:hover {
+    background-color: #f1f3f5;
+}
+
+/* Action Buttons */
+button {
+    padding: 10px 20px;
+    margin: 5px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-size: 14px;
+}
+
+button:hover {
+    opacity: 0.9;
+}
+
+button.add {
+    background-color: #28a745;
+    color: #fff;
+}
+
+button.edit {
+    background-color: #ffc107;
+    color: #fff;
+}
+
+button.delete {
+    background-color: #dc3545;
+    color: #fff;
+}
+
+button.add:hover {
+    background-color: #218838;
+}
+
+button.edit:hover {
+    background-color: #e0a800;
+}
+
+button.delete:hover {
+    background-color: #c82333;
+}
+
+/* Image Styling */
+td img {
+    border-radius: 4px;
+    width: 80px;
+    height: auto;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    table, th, td {
+        font-size: 14px;
+    }
+
+    button {
+        padding: 8px 15px;
+        font-size: 12px;
+    }
+}
+
+/* Modal Styling */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    width: 80%;
+    max-width: 500px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.modal-content h2 {
+    font-size: 1.5em;
+    margin-bottom: 15px;
+}
+
+.modal-content label {
+    font-weight: bold;
+}
+
+.modal-content input, .modal-content select, .modal-content textarea {
+    width: 100%;
+    padding: 8px;
+    margin: 8px 0 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.close {
+    color: #aaa;
+    font-size: 28px;
+    font-weight: bold;
+    position: absolute;
+    right: 20px;
+    top: 10px;
+    cursor: pointer;
+}
+
+.close:hover {
+    color: #333;
+}
+
+/* Button Styling for Add New Service */
+.add-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #28a745;
+    color: #fff;
+    text-align: center;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 20px;  /* Adds space between the header and button */
+    margin-left: 20px;  /* Position it just after the sidebar */
+    transition: background-color 0.3s ease;
+}
+
+
+/* Button Hover Effect */
+.add-button:hover {
+    background-color: #218838;
+}
+
+/* Adjust for smaller screen sizes */
+@media (max-width: 768px) {
+    .add-button {
+        margin-left: 0;  /* Ensure button is not off-screen on small devices */
+        margin-top: 10px;  /* Adjust top margin for smaller screens */
+        width: 100%;  /* Make the button span full width on small screens */
+    }
+}

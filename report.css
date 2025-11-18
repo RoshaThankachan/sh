@@ -1,0 +1,142 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f0f2f5;
+    margin: 0;
+    display: flex;
+}
+/* Sidebar Styles */
+.sidebar {
+    width: 250px;
+    height: 100vh;
+    background: linear-gradient(to bottom right, #1a73e8, #4285f4);
+    color: #fff;
+    padding: 20px;
+    position: fixed;
+    box-shadow: 4px 0 12px rgba(0, 0, 0, 0.15);
+    overflow-y: auto; /* Adds a vertical scrollbar if needed */
+}
+
+.sidebar h2 {
+    text-align: center;
+    font-weight: 700;
+    font-size: 26px;
+    margin-bottom: 30px;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar ul li {
+    margin: 20px 0;
+}
+
+.sidebar ul li a {
+    color: #ffffffcc;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 12px 20px;
+    display: block;
+    border-radius: 6px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.sidebar ul li a:hover,
+.sidebar ul li a.active {
+    background-color: #2a00e8;
+    color: white;
+    font-weight: 600;
+}
+/* Custom Scrollbar for Sidebar */
+.sidebar {
+    width: 250px;
+    height: 100vh;
+    background: linear-gradient(to bottom right, #1a73e8, #4285f4);
+    color: #fff;
+    padding: 20px;
+    position: fixed;
+    box-shadow: 4px 0 12px rgba(0, 0, 0, 0.15);
+    overflow-y: auto; /* Adds a scrollbar if content overflows */
+}
+
+/* Scrollbar styles for WebKit browsers */
+.sidebar::-webkit-scrollbar {
+    width: 8px; /* Width of the scrollbar */
+}
+
+.sidebar::-webkit-scrollbar-track {
+    background: #1a73e8; /* Track color */
+    border-radius: 10px; /* Rounded corners */
+}
+
+.sidebar::-webkit-scrollbar-thumb {
+    background-color: #ffffff; /* Scroll thumb color */
+    border-radius: 10px; /* Rounded corners */
+    border: 2px solid #1a73e8; /* Adds space around thumb */
+}
+
+/* Scrollbar styles for Firefox */
+.sidebar {
+    scrollbar-color: #ffffff #1a73e8; /* Thumb color, Track color */
+    scrollbar-width: 12px; /* Thicker scrollbar width */
+}
+
+
+/* Main Content Styles */
+.main-content {
+    margin-left: 250px;
+    padding: 40px;
+    width: calc(100% - 250px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #ffffff;
+    min-height: 100vh;
+    transition: margin-left 0.3s;
+}
+
+.main-content h1 {
+    font-size: 32px;
+    font-weight: 700;
+    color: #1a73e8;
+ margin-left: 150px;
+    padding: 15px 0;
+    text-align: center;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+/* Container for each report box */
+.report-box {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 40px;
+    margin-top: 200px;
+    margin-left: 170px;
+    margin-bottom: 20px; /* Space between boxes */
+    width: 100%;
+    max-width: 600px; /* Max width for readability */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+}
+
+/* Hover effect for report box */
+.report-box:hover {
+    transform: translateY(-3px);
+}
+
+.report-box h2 {
+    font-size: 1.25em;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.report-box p {
+    font-size: 1em;
+    line-height: 1.6;
+    margin-bottom: 8px;
+}

@@ -1,0 +1,178 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body {
+    height: 100%; /* Full height for body */
+}
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4; /* Light grey background */
+    color: #333; /* Dark text */
+    display: flex;
+    flex-direction: column; /* Arrange items in a column */
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding: 10px 0;
+}header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333; /* Dark background for the header */
+    padding: 10px 20px; /* Padding for the header */
+    color: #fff; /* White text color */
+}
+
+.logo h1 {
+    margin: 0; /* Remove default margin */
+    font-size: 2em; /* Logo font size */
+}
+
+nav ul {
+    list-style: none; /* Remove bullet points */
+    padding: 0; /* Remove default padding */
+    margin: 0; /* Remove default margin */
+    display: flex; /* Flexbox for horizontal alignment */
+}
+
+nav ul li {
+    margin: 0 15px; /* Spacing between menu items */
+}
+
+nav a {
+    color: white; /* White text for links */
+    text-decoration: none; /* Remove underline */
+    font-weight: bold; /* Bold text */
+    transition: color 0.3s; /* Transition for hover effect */
+}
+
+nav a:hover {
+    color: #ffcc00; /* Change color on hover */
+}
+
+.header-actions {
+    display: flex; /* Flexbox for search and social icons */
+    align-items: center;
+}
+
+.main-content {
+    flex: 1; /* Allow main content to grow and fill space */
+}
+#faq {
+    padding: 50px 0;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#faq h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.container {
+    /* Keep your existing styles */
+    max-width: 800px; /* Set a maximum width for the container */
+    margin-top: 10px;
+    margin-left: 350px;
+    padding: 20px; /* Padding around the content */
+    background-color: #fff; /* White background for the FAQ section */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+    margin-bottom: 70px;
+}
+
+h1 {
+    text-align: center; /* Center the heading */
+    margin-bottom: 20px; /* Space below the heading */
+    font-size: 2.5em; /* Larger font size for the heading */
+    
+}
+
+/* FAQ Item Styles */
+.faq-item {
+    border-bottom: 1px solid #e0e0e0; /* Light border between items */
+}
+
+.faq-item:last-child {
+    border-bottom: none; /* Remove border for the last item */
+}
+
+.faq-question {
+    background-color: #3498db; /* Blue background for the question */
+    color: white; /* White text color */
+    padding: 15px; /* Padding around the question */
+    cursor: pointer; /* Pointer cursor on hover */
+    display: flex; /* Flexbox to align text and icon */
+    justify-content: space-between; /* Space between text and icon */
+    align-items: center; /* Center items vertically */
+    border-radius: 5px; /* Rounded corners for question box */
+    transition: background-color 0.3s; /* Smooth background transition */
+}
+
+.faq-question:hover {
+    background-color: #2980b9; /* Darker blue on hover */
+}
+
+.toggle-icon {
+    transition: transform 0.3s; /* Smooth rotation for toggle icon */
+}
+
+.faq-question.active .toggle-icon {
+    transform: rotate(180deg); /* Rotate icon when active */
+}
+
+.faq-answer {
+    display: none; /* Initially hide the answers */
+    padding: 15px; /* Padding around the answer */
+    background-color: #f0f0f0; /* Light gray background for answers */
+    border-left: 5px solid #3498db; /* Blue left border */
+    margin-top: -1px; /* Remove gap from border */
+    border-radius: 0 0 5px 5px; /* Rounded corners for the answer box */
+}
+
+/* Footer Styles */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding-top: 10px;
+    padding-right: 0px;
+    padding-bottom: 10px;
+    padding-left: 0px;
+    height: 77.6px;
+}
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    unicode-bidi: isolate;
+}
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2em; /* Smaller font size for mobile */
+    }
+
+    .container {
+        margin: 20px; /* Less margin on mobile */
+    }
+
+    nav ul {
+        flex-direction: column; /* Stack items vertically on small screens */
+        align-items: flex-start; /* Align items to the start */
+    }
+
+    nav ul li {
+        margin: 5px 0; /* Adjust margin for stacked items */
+    }
+}

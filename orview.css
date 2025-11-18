@@ -1,0 +1,189 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f0f2f5;
+    margin: 0;
+    display: flex;
+}
+/* Sidebar Styles */
+.sidebar {
+    width: 250px;
+    height: 100vh;
+    background: linear-gradient(to bottom right, #1a73e8, #4285f4);
+    color: #fff;
+    padding: 20px;
+    position: fixed;
+    box-shadow: 4px 0 12px rgba(0, 0, 0, 0.15);
+    overflow-y: auto; /* Adds a vertical scrollbar if needed */
+}
+
+.sidebar h2 {
+    text-align: center;
+    font-weight: 700;
+    font-size: 26px;
+    margin-bottom: 30px;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar ul li {
+    margin: 20px 0;
+}
+
+.sidebar ul li a {
+    color: #ffffffcc;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 12px 20px;
+    display: block;
+    border-radius: 6px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.sidebar ul li a:hover,
+.sidebar ul li a.active {
+    background-color: #2a00e8;
+    color: white;
+    font-weight: 600;
+}
+/* Custom Scrollbar for Sidebar */
+.sidebar {
+    width: 250px;
+    height: 100vh;
+    background: linear-gradient(to bottom right, #1a73e8, #4285f4);
+    color: #fff;
+    padding: 20px;
+    position: fixed;
+    box-shadow: 4px 0 12px rgba(0, 0, 0, 0.15);
+    overflow-y: auto; /* Adds a scrollbar if content overflows */
+}
+
+/* Scrollbar styles for WebKit browsers */
+.sidebar::-webkit-scrollbar {
+    width: 8px; /* Width of the scrollbar */
+}
+
+.sidebar::-webkit-scrollbar-track {
+    background: #1a73e8; /* Track color */
+    border-radius: 10px; /* Rounded corners */
+}
+
+.sidebar::-webkit-scrollbar-thumb {
+    background-color: #ffffff; /* Scroll thumb color */
+    border-radius: 10px; /* Rounded corners */
+    border: 2px solid #1a73e8; /* Adds space around thumb */
+}
+
+/* Scrollbar styles for Firefox */
+.sidebar {
+    scrollbar-color: #ffffff #1a73e8; /* Thumb color, Track color */
+    scrollbar-width: 12px; /* Thicker scrollbar width */
+}
+
+
+/* Main Content Styles */
+.main-content {
+    margin-left: 250px;
+    padding: 40px;
+    width: calc(100% - 250px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #ffffff;
+    min-height: 100vh;
+    transition: margin-left 0.3s;
+}
+
+.header h1 {
+    font-size: 32px;
+    font-weight: 700;
+    color: #1a73e8;
+    margin: 0;
+    padding: 15px 0;
+    text-align: center;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.header p {
+    font-size: 18px;
+    color: #666;
+    margin: 5px 0 20px;
+    text-align: center;
+}
+
+
+
+/* Table styling */
+table {
+    width: 80%;
+    margin: 20px 0;
+    border-collapse: collapse;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+    padding: 12px;
+}
+
+th {
+    background-color:  #1a73e8;
+    color: white;
+    text-align: left;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+td {
+    color: #333;
+    font-size: 14px;
+}
+
+/* Alternating row colors */
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+/* Hover effect on rows */
+tr:hover {
+    background-color: #e9f5e9;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    table {
+        width: 100%;
+    }
+}
+.back-button {
+    display: inline-block; /* Inline block for button */
+    padding: 10px 15px; /* Button padding */
+    background-color: #1a73e8; /* Button color */
+    color: white; /* White text */
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor */
+    transition: background-color 0.3s, transform 0.2s; /* Transition for background and transform */
+    margin: 20px auto; /* Center button horizontally with auto margin */
+    text-align: center; /* Center text inside button */
+    width: 200px; /* Optional: set a fixed width for consistency */
+}
+
+/* Button Container Style */
+.button-container {
+    display: flex; /* Use flexbox */
+    justify-content: center; /* Center horizontally */
+    margin: 20px 0; /* Space above and below */
+}
+
+
+.back-button:hover {
+    background-color: #1a73e8;/* Darker shade on hover */
+    transform: scale(1.05); /* Slightly grow button on hover */
+}

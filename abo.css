@@ -1,0 +1,148 @@
+
+/* Basic Styles */
+body {
+    font-family: Arial, sans-serif; /* Font for the entire page */
+    line-height: 1.6; /* Line height for better readability */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+}
+
+header {
+    display: flex; /* Flexbox for layout */
+    justify-content: space-between; /* Space between logo and nav */
+    align-items: center; /* Center items vertically */
+    background-color: #333; /* Dark background for the header */
+    padding: 10px 20px; /* Padding for the header */
+    color: #fff; /* White text color */
+}
+
+.logo h1 {
+    margin: 0; /* Remove default margin */
+    font-size: 2em; /* Logo font size */
+}
+
+nav ul {
+    list-style: none; /* Remove bullet points */
+    padding: 0; /* Remove default padding */
+    margin: 0; /* Remove default margin */
+    display: flex; /* Flexbox for horizontal alignment */
+}
+
+nav ul li {
+    margin: 0 15px; /* Spacing between menu items */
+}
+
+nav a {
+    color: white; /* White text for links */
+    text-decoration: none; /* Remove underline */
+    font-weight: bold; /* Bold text */
+    transition: color 0.3s; /* Transition for hover effect */
+}
+
+nav a:hover {
+    color: #ffcc00; /* Change color on hover */
+}
+
+.header-actions {
+    display: flex; /* Flexbox for any action items like search or icons */
+    align-items: center; /* Center items vertically */
+}
+/* About Us Section Styling */
+#about {
+    padding: 60px 20px;
+    background-color: #f9f9f9;
+    color: #2c3e50;
+    text-align: center;
+}
+
+#about h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #34495e;
+}
+
+.about-container {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin-top: 40px;
+}
+
+/* Responsive Design for Wider Screens */
+@media(min-width: 768px) {
+    .about-container {
+        flex-direction: row;
+        gap: 50px;
+        justify-content: space-between;
+    }
+
+    .about-content {
+        flex: 1;
+        max-width: 600px;
+        text-align: left;
+    }
+
+    .about-image {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+    }
+
+    .about-image img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 10px;
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease-in-out;
+    }
+
+    .about-image img:hover {
+        transform: scale(1.05); /* Slight zoom on hover */
+    }
+}
+
+/* Typography and Spacing */
+#about p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin-bottom: 15px;
+    color: #555;
+}
+
+#about strong {
+    color: #e67e22; /* Highlight important text */
+}
+
+/* Subtle Animations */
+.about-content {
+    animation: fadeInLeft 1s ease-in-out;
+}
+
+.about-image img {
+    animation: fadeInRight 1s ease-in-out;
+}
+
+/* Keyframes for fade-in animations */
+@keyframes fadeInLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeInRight {
+    0% {
+        opacity: 0;
+        transform: translateX(30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}

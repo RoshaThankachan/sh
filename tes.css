@@ -1,0 +1,270 @@
+/* Basic Styles */
+body {
+    font-family: Arial, sans-serif; /* Font for the entire page */
+    line-height: 1.6; /* Line height for better readability */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+}
+
+header {
+    display: flex; /* Flexbox for layout */
+    justify-content: space-between; /* Space between logo and nav */
+    align-items: center; /* Center items vertically */
+    background-color: #333; /* Dark background for the header */
+    padding: 10px 20px; /* Padding for the header */
+    color: #fff; /* White text color */
+}
+
+.logo h1 {
+    margin: 0; /* Remove default margin */
+    font-size: 2em; /* Logo font size */
+}
+
+nav ul {
+    list-style: none; /* Remove bullet points */
+    padding: 0; /* Remove default padding */
+    margin: 0; /* Remove default margin */
+    display: flex; /* Flexbox for horizontal alignment */
+}
+
+nav ul li {
+    margin: 0 15px; /* Spacing between menu items */
+}
+
+nav a {
+    color: white; /* White text for links */
+    text-decoration: none; /* Remove underline */
+    font-weight: bold; /* Bold text */
+    transition: color 0.3s; /* Transition for hover effect */
+}
+
+nav a:hover {
+    color: #ffcc00; /* Change color on hover */
+}
+
+.header-actions {
+    display: flex; /* Flexbox for any action items like search or icons */
+    align-items: center; /* Center items vertically */
+}
+
+
+/* Testimonials Section Styles */
+#testimonials {
+    padding: 40px 20px; /* Padding for the section */
+    background-color: #f9f9f9; /* Light background for contrast */
+    text-align: center; /* Center text */
+}
+
+#testimonials h2 {
+    font-size: 2.5em; /* Larger font for the section heading */
+    margin-bottom: 20px; /* Space below the heading */
+    color: #333; /* Darker color for the heading */
+}
+
+.testimonial-container {
+    display: flex; /* Flexbox for layout */
+    flex-wrap: wrap; /* Allow wrapping of items */
+    justify-content: center; /* Center the testimonial items */
+    gap: 20px; /* Space between items */
+    max-width: 800px; /* Max width for content */
+    margin: 0 auto; /* Center content */
+}
+
+.testimonial-item {
+    background: rgba(255, 255, 255, 0.8); /* Semi-transparent background */
+    border-radius: 8px; /* Rounded corners */
+    padding: 20px; /* Padding for content */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    flex: 1 1 300px; /* Flexible width for responsive design */
+    position: relative; /* For any pseudo-elements */
+}
+
+.testimonial-item p {
+    margin: 0; /* Remove default margin */
+    font-style: italic; /* Italicize testimonial text */
+    color: #555; /* Gray color for paragraph text */
+}
+
+.testimonial-item strong {
+    display: block; /* Make names block elements */
+    margin-top: 10px; /* Space above names */
+    color: #333; /* Darker color for names */
+    font-weight: bold; /* Bold for emphasis */
+}
+/* Basic Styles */
+body {
+    font-family: Arial, sans-serif; /* Font for the entire page */
+    line-height: 1.6; /* Line height for better readability */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+}
+
+header {
+    display: flex; /* Flexbox for layout */
+    justify-content: space-between; /* Space between logo and nav */
+    align-items: center; /* Center items vertically */
+    background-color: #333; /* Dark background for the header */
+    padding: 10px 20px; /* Padding for the header */
+    color: #fff; /* White text color */
+}
+
+.logo h1 {
+    margin: 0; /* Remove default margin */
+    font-size: 2em; /* Logo font size */
+}
+
+nav ul {
+    list-style: none; /* Remove bullet points */
+    padding: 0; /* Remove default padding */
+    margin: 0; /* Remove default margin */
+    display: flex; /* Flexbox for horizontal alignment */
+}
+
+nav ul li {
+    margin: 0 15px; /* Spacing between menu items */
+}
+
+nav a {
+    color: white; /* White text for links */
+    text-decoration: none; /* Remove underline */
+    font-weight: bold; /* Bold text */
+    transition: color 0.3s; /* Transition for hover effect */
+}
+
+nav a:hover {
+    color: #ffcc00; /* Change color on hover */
+}
+
+.header-actions {
+    display: flex; /* Flexbox for any action items like search or icons */
+    align-items: center; /* Center items vertically */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column; /* Stack items vertically on small screens */
+        align-items: flex-start; /* Align to the left */
+    }
+
+    nav ul {
+        flex-direction: column; /* Stack menu items vertically */
+        gap: 10px; /* Space between items */
+    }
+}
+/* Services Section Styles */
+/* Services Section Styling */
+#services {
+    padding: 40px 20px;
+    background-color: #f9f9f9;
+}
+
+#services h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #2c3e50;
+}
+
+/* Service Grid */
+.service-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    margin-top: 30px;
+}
+
+/* Service Item Box Styling with Different Colors */
+.service-item {
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    color: white;
+    transition: transform 0.3s ease;
+}
+
+.service-item h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: white;
+}
+
+.service-item p {
+    font-size: 1rem;
+    line-height: 1.5;
+    color: white;
+}
+/* Service Item Box Styling with Enhanced Font Colors */
+.service-item {
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    color: #333; /* Default darker font color */
+    transition: transform 0.3s ease;
+}
+
+.service-item h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #2c3e50; /* Darker heading color for better contrast */
+}
+
+.service-item p {
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #2c3e50; /* Darker paragraph color */
+}
+
+/* Color Variants with Enhanced Font Colors */
+.service-item:nth-child(1) {
+    background-color: #a8d5e2; /* Pastel Blue */
+    color: #2c3e50; /* Darker text for contrast */
+}
+
+.service-item:nth-child(2) {
+    background-color: #f4a8a5; /* Pastel Red */
+    color: #2c3e50; /* Darker text */
+}
+
+.service-item:nth-child(3) {
+    background-color: #a8e6a2; /* Pastel Green */
+    color: #2c3e50; /* Darker text */
+}
+
+.service-item:nth-child(4) {
+    background-color: #f9e8a8; /* Pastel Yellow */
+    color: #2c3e50; /* Darker text */
+}
+
+.service-item:nth-child(5) {
+    background-color: #d8a8e2; /* Pastel Purple */
+    color: #2c3e50; /* Darker text */
+}
+
+.service-item:nth-child(6) {
+    background-color: #f7caa2; /* Pastel Orange */
+    color: #2c3e50; /* Darker text */
+}
+
+.service-item:nth-child(7) {
+    background-color: #a8e2d0; /* Pastel Teal */
+    color: #2c3e50; /* Darker text */
+}
+
+.service-item:nth-child(8) {
+    background-color: #b1bccf; /* Pastel Dark Blue */
+    color: #2c3e50; /* Darker text */
+}
+
+.service-item:nth-child(9) {
+    background-color: #f6c8e2; /* Pastel Pink */
+    color: #2c3e50; /* Darker text */
+}
+/* Footer Styles */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}

@@ -1,0 +1,98 @@
+/* Basic reset for margins and paddings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Main page styling */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f4f6f9;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Main container for form */
+.main-content {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+    text-align: center;
+}
+
+.main-content h1 {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: #2b2b2b;
+}
+
+/* Styling for labels */
+form label {
+    font-size: 14px;
+    font-weight: 500;
+    color: #555;
+    display: block;
+    margin: 15px 0 5px;
+    text-align: left;
+}
+
+/* Styling for input fields */
+form input[type="text"] {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+    color: #333;
+    background-color: #f9fafc;
+    transition: border 0.3s;
+}
+
+form input[type="text"]:focus {
+    border-color: #007bff;
+    outline: none;
+    background-color: #fff;
+}
+
+/* Styling for the submit button */
+form button[type="submit"] {
+    width: 100%;
+    padding: 12px 20px;
+    margin-top: 20px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+form button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+/* Add some spacing between form fields */
+form input[type="text"] + label {
+    margin-top: 10px;
+}
+
+/* Responsive design */
+@media (max-width: 480px) {
+    .main-content {
+        padding: 20px;
+    }
+
+    form button[type="submit"] {
+        font-size: 14px;
+    }
+}

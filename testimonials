@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testimonials - Shoe Laundry</title>
+    <link rel="stylesheet" href="tcss.css"> <!-- Link to your CSS file -->
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <div class="logo">
+            <h1>Shoe Laundry</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="home.php">Home</a></li> <!-- Updated to .php -->
+                <li><a href="services.php">Services</a></li> <!-- Updated to .php -->
+                <li><a href="about.php">About Us</a></li> <!-- Updated to .php -->
+                <li><a href="testimonials.php">Testimonials</a></li> <!-- Updated to .php -->
+                <li><a href="contact.php">Contact</a></li> <!-- Updated to .php -->
+            </ul>
+        </nav>
+    </header>
+
+   <!-- Testimonials Section -->
+<section id="testimonials">
+    <h2>What Our Customers Say</h2>
+    <div class="testimonial-container">
+        <div class="testimonial-item">
+            <p>"Excellent service! My shoes have never looked better! The team is professional and attentive." - <strong>Jane D.</strong></p>
+        </div>
+        <div class="testimonial-item">
+            <p>"Highly recommend Shoe Laundry! Fast and reliable service. My sneakers came back looking brand new!" - <strong>John S.</strong></p>
+        </div>
+        <div class="testimonial-item">
+            <p>"I was amazed by the quality of the cleaning! They removed stains I thought were permanent." - <strong>Emily R.</strong></p>
+        </div>
+        <div class="testimonial-item">
+            <p>"The customer service was fantastic. They listened to my needs and exceeded my expectations!" - <strong>Michael T.</strong></p>
+        </div>
+        <div class="testimonial-item">
+            <p>"I’ll never go anywhere else for shoe care! Shoe Laundry is the best!" - <strong>Sarah W.</strong></p>
+        </div>
+    </div>
+</section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 Shoe Laundry. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

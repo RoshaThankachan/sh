@@ -1,0 +1,113 @@
+
+
+.orders-container {
+    margin: 0 auto;
+    width: 80%;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #f4f4f4;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    color: #333;
+}
+
+.topbar {
+    width: 100%;
+    background-color:#2980b9;
+    padding: 15px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+
+.topbar h2 {
+    color: #ecf0f1;
+    text-align: center;
+    margin: 0;
+}
+
+.topbar ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+.topbar ul li {
+    padding: 10px 20px;
+}
+
+.topbar ul li a {
+    color: #ecf0f1;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px 15px;
+    display: block;
+    transition: background-color 0.3s ease;
+}
+
+.topbar ul li a:hover,
+.topbar ul li a.active {
+    background-color: #34495e;
+    border-radius: 5px;
+}
+
+.topbar ul li a i {
+    margin-right: 8px;
+}
+.main-content {
+    margin-top: 200px; /* Space for topbar */
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    flex-grow: 1;
+    width: 95%;
+    margin-left: auto;  /* Center the content */
+    margin-right: auto; /* Center the content */
+}
+
+header {
+    background-color: #2980b9;
+    color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.orders-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.orders-table th, .orders-table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+}
+
+.orders-table th {
+    background-color: #f4f4f4;
+}
+
+.orders-table td form input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.orders-table td form input[type="submit"]:hover {
+    background-color: #45a049;
+}

@@ -1,0 +1,93 @@
+/* Basic Styles */
+body {
+    font-family: Arial, sans-serif; /* Font for the entire page */
+    line-height: 1.6; /* Line height for better readability */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+}
+
+header {
+    display: flex; /* Flexbox for layout */
+    justify-content: space-between; /* Space between logo and nav */
+    align-items: center; /* Center items vertically */
+    background-color: #333; /* Dark background for the header */
+    padding: 10px 20px; /* Padding for the header */
+    color: #fff; /* White text color */
+}
+
+.logo h1 {
+    margin: 0; /* Remove default margin */
+    font-size: 2em; /* Logo font size */
+}
+
+nav ul {
+    list-style: none; /* Remove bullet points */
+    padding: 0; /* Remove default padding */
+    margin: 0; /* Remove default margin */
+    display: flex; /* Flexbox for horizontal alignment */
+}
+
+nav ul li {
+    margin: 0 15px; /* Spacing between menu items */
+}
+
+nav a {
+    color: white; /* White text for links */
+    text-decoration: none; /* Remove underline */
+    font-weight: bold; /* Bold text */
+    transition: color 0.3s; /* Transition for hover effect */
+}
+
+nav a:hover {
+    color: #ffcc00; /* Change color on hover */
+}
+
+.header-actions {
+    display: flex; /* Flexbox for any action items like search or icons */
+    align-items: center; /* Center items vertically */
+}
+
+
+/* Testimonials Section Styles */
+#testimonials {
+    padding: 40px 20px; /* Padding for the section */
+    background-color: #f9f9f9; /* Light background for contrast */
+    text-align: center; /* Center text */
+}
+
+#testimonials h2 {
+    font-size: 2.5em; /* Larger font for the section heading */
+    margin-bottom: 20px; /* Space below the heading */
+    color: #333; /* Darker color for the heading */
+}
+
+.testimonial-container {
+    display: flex; /* Flexbox for layout */
+    flex-wrap: wrap; /* Allow wrapping of items */
+    justify-content: center; /* Center the testimonial items */
+    gap: 20px; /* Space between items */
+    max-width: 800px; /* Max width for content */
+    margin: 0 auto; /* Center content */
+}
+
+.testimonial-item {
+    background: rgba(255, 255, 255, 0.8); /* Semi-transparent background */
+    border-radius: 8px; /* Rounded corners */
+    padding: 20px; /* Padding for content */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    flex: 1 1 300px; /* Flexible width for responsive design */
+    position: relative; /* For any pseudo-elements */
+}
+
+.testimonial-item p {
+    margin: 0; /* Remove default margin */
+    font-style: italic; /* Italicize testimonial text */
+    color: #555; /* Gray color for paragraph text */
+}
+
+.testimonial-item strong {
+    display: block; /* Make names block elements */
+    margin-top: 10px; /* Space above names */
+    color: #333; /* Darker color for names */
+    font-weight: bold; /* Bold for emphasis */
+}

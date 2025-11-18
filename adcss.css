@@ -1,0 +1,136 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #3d3a3a;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+header h1 {
+    color: #fff;
+    margin: 0;
+}
+
+header a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.wrapper {
+    max-width: 550px;
+    margin: 10px auto;
+    padding: 15px;
+    background-color: rgba(255, 255, 255, 0.85);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 6px;
+    backdrop-filter: blur(5px);
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+    text-align: center; /* Center-aligns content inside the wrapper */
+}
+
+.wrapper:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.12);
+}
+
+h2 {
+    text-align: center;
+    color: #2c3e50;
+    margin-bottom: 15px;
+    font-size: 1.6rem;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+/* Form Styling */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    align-items: center; /* Centers form fields */
+}
+
+form div {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    width: 80%; /* Adjusts width of each field container */
+    max-width: 300px; /* Maximum width for fields */
+}
+
+form label {
+    font-size: 0.85rem;
+    color: #34495e;
+    font-weight: 600;
+}
+
+form input[type="text"] {
+    width: 100%; /* Fills the width of its container */
+    padding: 6px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    font-size: 0.85rem;
+    background-color: rgba(255, 255, 255, 0.9);
+    transition: border 0.3s ease, background-color 0.3s ease;
+}
+
+/* Focused state */
+form input[type="text"]:focus {
+    border-color: #3498db;
+    background-color: #eaf4fb;
+    outline: none;
+    box-shadow: 0 0 2px rgba(52, 152, 219, 0.3);
+}
+
+/* Submit Button Styling */
+button[type="submit"] {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 8px 14px;
+    font-size: 0.85rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    font-weight: bold;
+    width: 80%;
+    max-width: 300px; /* Matches the width of input fields */
+}
+
+button[type="submit"]:hover {
+    background-color: #2980b9;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+button:focus {
+    outline: none;
+    box-shadow: 0 0 6px rgba(52, 152, 219, 0.4);
+}
+
+/* Error Message Styling */
+.error-message {
+    color: #e74c3c;
+    background-color: #f9ebea;
+    padding: 6px;
+    border-radius: 4px;
+    text-align: center;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .wrapper {
+        padding: 10px;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+}

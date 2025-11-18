@@ -1,0 +1,161 @@
+/* Form Styles */
+form {
+    background: #fff; /* White background for form */
+    padding: 20px; /* Padding around the form */
+    border-radius: 5px; /* Rounded corners */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    max-width: 500px; /* Max width for form */
+    margin: 20px auto; /* Center the form */
+}
+
+label {
+    font-weight: bold; /* Bold for labels */
+    margin-bottom: 5px; /* Spacing below labels */
+    display: block; /* Block display for labels */
+}
+
+input[type="text"],
+select {
+    width: 100%; /* Full width */
+    padding: 10px; /* Padding inside input/select */
+    border: 1px solid #ddd; /* Light gray border */
+    border-radius: 5px; /* Rounded corners */
+    margin-bottom: 15px; /* Space below inputs */
+    transition: border-color 0.3s; /* Transition for border color */
+}
+
+input[type="text"]:focus,
+select:focus {
+    border-color: #1a73e8; /* Change border color on focus */
+    outline: none; /* Remove outline */
+}
+
+button[type="submit"] {
+    padding: 10px 15px;
+    background-color: #28a745; /* Green background for button */
+    color: white; /* White text */
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor */
+    transition: background-color 0.3s, transform 0.2s; /* Transition for background and transform */
+}
+
+button[type="submit"]:hover {
+    background-color: #218838; /* Darker green on hover */
+    transform: scale(1.05); /* Slightly grow button on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .main-content {
+        padding: 10px; /* Reduce padding on smaller screens */
+    }
+
+    form {
+        margin: 10px; /* Less margin on smaller screens */
+        width: auto; /* Auto width for small screens */
+    }
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f4f4f4; /* Light background for contrast */
+    color: #333; /* Dark text color */
+}
+
+.sidebar {
+    width: 250px; /* Fixed width for sidebar */
+    height: 100vh; /* Full height */
+    background: linear-gradient(to bottom, #1a73e8, #4285f4); /* Gradient background */
+    color: white; /* White text in sidebar */
+    padding: 20px; /* Padding around content */
+    position: fixed; /* Fixed position */
+}
+
+.sidebar h2 {
+    text-align: center;
+    margin-bottom: 20px; /* Spacing below title */
+}
+
+.sidebar ul {
+    list-style: none; /* No bullet points */
+}
+
+.sidebar ul li {
+    margin: 15px 0; /* Spacing between links */
+}
+
+.sidebar ul li a {
+    color: white; /* White text for links */
+    text-decoration: none; /* No underline */
+    display: block; /* Block-level for easy clicking */
+    padding: 10px; /* Padding for clickable area */
+    transition: background 0.3s; /* Transition effect */
+}
+
+.sidebar ul li a:hover,
+.sidebar ul li a.active {
+    background-color: #1a01fe; /* Teal for hover/active state */
+    color: white; /* White text on hover */
+}
+
+.main-content {
+    margin-left: 260px; /* Space for sidebar */
+    padding: 20px; /* Main content padding */
+}
+
+.header {
+    background: #fff; /* White background for header */
+    padding: 20px; /* Padding for header */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    border-radius: 5px; /* Rounded corners */
+}
+
+.add-employee-btn {
+    padding: 10px 15px;
+    background-color: #28a745; /* Green background for button */
+    color: white; /* White text for button */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 20px; /* Space below button */
+    transition: background 0.3s; /* Transition effect */
+}
+
+.add-employee-btn:hover {
+    background-color: #218838; /* Darker green on hover */
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse; /* Collapse borders for table */
+    margin-top: 20px; /* Space above table */
+}
+
+th, td {
+    padding: 12px;
+    border: 1px solid #ddd; /* Light gray border for table */
+    text-align: left; /* Align text to the left */
+}
+
+th {
+    background-color: #f2f2f2; /* Light gray for header */
+}
+
+.view-btn {
+    padding: 5px 10px;
+    background-color: #007bff; /* Blue background for view button */
+    color: white; /* White text for button */
+    text-decoration: none; /* No underline */
+    border-radius: 3px; /* Rounded corners for button */
+    transition: background 0.3s; /* Transition effect */
+}
+
+.view-btn:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}

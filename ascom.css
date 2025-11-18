@@ -1,0 +1,241 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif; /* Font family */
+    background-color: #f0f2f5; /* Light gray background */
+    margin: 0; /* Remove default margin */
+    display: flex; /* Flexbox layout */
+}
+
+/* Sidebar Styles */
+.sidebar {
+    width: 250px; /* Fixed width for sidebar */
+    height: 100vh; /* Full height */
+    background: linear-gradient(to bottom, #1a73e8, #4285f4); /* Gradient background */
+    color: white; /* White text in sidebar */
+    padding: 20px; /* Padding around content */
+    position: fixed; /* Fixed position */
+    box-shadow: 4px 0 12px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease;
+    overflow-y: auto; /* Adds a scrollbar if content overflows */
+}
+
+.sidebar h2 {
+    text-align: center; /* Centered heading */
+    color: #ffffff; /* White text for the heading */
+    font-weight: 700; /* Bold font */
+    font-size: 26px; /* Font size for heading */
+    margin-bottom: 30px; /* Margin below heading */
+}
+
+.sidebar ul {
+    list-style: none; /* Remove bullet points */
+    padding: 0; /* Remove padding */
+}
+
+.sidebar ul li {
+    margin: 20px 0; /* Spacing between links */
+}
+
+.sidebar ul li a {
+    color: white; /* Soft grayish-blue for links */
+    text-decoration: none; /* Remove underline */
+    font-size: 16px; /* Font size for links */
+    padding: 12px 20px; /* Padding for clickable area */
+    display: block; /* Block-level for easy clicking */
+    border-radius: 6px; /* Rounded corners */
+    transition: background-color 0.3s; /* Transition effect */
+}
+
+.sidebar ul li a:hover,
+.sidebar ul li a.active {
+    background-color: #1a01fe; /* Teal for hover/active state */
+    color: white; /* White text on hover */
+}
+/* Scrollbar styles for WebKit browsers */
+.sidebar::-webkit-scrollbar {
+    width: 8px; /* Width of the scrollbar */
+}
+
+.sidebar::-webkit-scrollbar-track {
+    background: #1a73e8; /* Track color */
+    border-radius: 10px; /* Rounded corners */
+}
+
+.sidebar::-webkit-scrollbar-thumb {
+    background-color: #ffffff; /* Scroll thumb color */
+    border-radius: 10px; /* Rounded corners */
+    border: 2px solid #1a73e8; /* Adds space around thumb */
+}
+
+/* Scrollbar styles for Firefox */
+.sidebar {
+    scrollbar-color: #ffffff #1a73e8; /* Thumb color, Track color */
+    scrollbar-width: 12px; /* Thicker scrollbar width */
+}
+
+/* Main Content Styling */
+.main-content {
+    margin-left: 450px;
+    padding: 20px;
+    align-content: center;
+}
+
+header h1 {
+    font-size: 32px;
+    font-weight: 700;
+    color:#007bff;
+    margin: 0;
+    padding: 15px 0;
+    text-align: center;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.orders-section {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.orders-section h2 {
+    font-size: 22px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Table Styling */
+.orders-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.orders-table th, 
+.orders-table td {
+    padding: 12px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+.orders-table th {
+    background-color: #007bff;
+    color: #fff;
+    font-weight: bold;
+}
+
+.orders-table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+/* Form and Button Styling */
+form {
+    display: inline-block;
+}
+
+select {
+    padding: 8px;
+    font-size: 15px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    background-color: #f9f9f9;
+}
+
+input[type="submit"] {
+    padding: 8px 16px;
+    font-size: 15px;
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 10px;
+    transition: background 0.3s;
+}
+
+input[type="submit"]:hover {
+    background-color: #218838;
+}
+
+/* General Alert Styles */
+.alert {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    border-radius: 8px;
+    font-size: 18px;
+    text-align: center;
+    z-index: 9999; /* Ensure the alert is on top */
+    width: auto;
+    max-width: 400px;
+    min-width: 250px;
+    display: none; /* Hidden by default */
+}
+
+/* Success Alert */
+.alert.success {
+    background-color: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+}
+
+/* Error Alert */
+.alert.error {
+    background-color: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+}
+
+/* Fade In Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* To make the alert fade in */
+.alert.show {
+    display: block;
+    animation: fadeIn 0.5s ease-out;
+}
+
+
+/* Responsive Styling */
+@media screen and (max-width: 768px) {
+    .sidebar {
+        width: 200px;
+    }
+    .main-content {
+        margin-left: 220px;
+        padding: 15px;
+    }
+    header h1, 
+    .orders-section h2 {
+        font-size: 24px;
+    }
+    select, 
+    input[type="submit"] {
+        font-size: 14px;
+    }
+}
+
+/* Back Button */
+.back-button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 18px;
+    color: white;
+    background-color: #ff5900;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-top: 100px;
+   margin-left: 300px;
+}
+
+.back-button:hover {
+    background-color: #0056b3;
+}

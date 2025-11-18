@@ -1,0 +1,174 @@
+/* General Styles for Employee List */
+.employee-list {
+    margin: 20px auto; /* Center the employee list horizontally */
+    padding: 20px; /* Padding around the list */
+    background: #fff; /* White background */
+    border-radius: 5px; /* Rounded corners */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+    max-width: 800px; /* Max width for the list */
+    text-align: center; /* Center text inside the employee list */
+    margin-left: 260px; /* Create space from the sidebar */
+}
+
+/* Employee Table Styles */
+table {
+    width: 100%; /* Full width of the container */
+    border-collapse: collapse; /* Collapse borders */
+    margin-top: 20px; /* Space above the table */
+}
+
+th, td {
+    padding: 12px; /* Padding for cells */
+    text-align: left; /* Align text to the left */
+    border-bottom: 1px solid #ddd; /* Light gray border */
+}
+
+th {
+    background-color: #1a73e8; /* Header background color */
+    color: white; /* White text in header */
+    font-weight: bold; /* Bold font for header */
+}
+
+tr:hover {
+    background-color: #f1f1f1; /* Light gray on row hover */
+    transition: background-color 0.3s; /* Smooth transition */
+}
+
+/* Button Styles */
+.add-employee-button {
+    display: inline-block; /* Inline block for button */
+    padding: 10px 15px; /* Button padding */
+    background-color: #ff5722; /* Button color */
+    color: white; /* White text */
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor */
+    transition: background-color 0.3s, transform 0.2s; /* Transition for background and transform */
+    margin: 20px 0; /* Space around button */
+}
+
+.add-employee-button:hover {
+    background-color: #e64a19; /* Darker shade on hover */
+    transform: scale(1.05); /* Slightly grow button on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .employee-list {
+        padding: 10px; /* Less padding on smaller screens */
+        margin: 10px; /* Less margin on smaller screens */
+        margin-left: 0; /* Reset margin for mobile view */
+    }
+
+    table {
+        font-size: 14px; /* Smaller font size for tables */
+    }
+
+    th, td {
+        padding: 8px; /* Less padding for cells */
+    }
+
+    .add-employee-button {
+        padding: 8px 12px; /* Smaller button padding */
+    }
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f4f4f4; /* Light background for contrast */
+    color: #333; /* Dark text color */
+}
+
+.sidebar {
+    width: 250px; /* Fixed width for sidebar */
+    height: 100vh; /* Full height */
+    background: linear-gradient(to bottom, #1a73e8, #4285f4); /* Gradient background */
+    color: white; /* White text in sidebar */
+    padding: 20px; /* Padding around content */
+    position: fixed; /* Fixed position */
+}
+
+.sidebar h2 {
+    text-align: center;
+    
+    margin-bottom: 20px; /* Spacing below title */
+}
+
+.sidebar ul {
+    list-style: none; /* No bullet points */
+}
+
+.sidebar ul li {
+    margin: 15px 0; /* Spacing between links */
+}
+
+.sidebar ul li a {
+    color: white; /* White text for links */
+    text-decoration: none; /* No underline */
+    display: block; /* Block-level for easy clicking */
+    padding: 10px; /* Padding for clickable area */
+    transition: background 0.3s; /* Transition effect */
+}
+
+.sidebar ul li a:hover,
+.sidebar ul li a.active {
+    background-color:  #1a01fe;/* Teal for hover/active state */
+    color: white; /* White text on hover */
+}
+
+.main-content {
+    margin-left: 260px; /* Space for sidebar */
+    padding: 20px; /* Main content padding */
+}
+
+.header {
+    background: #fff; /* White background for header */
+    padding: 20px; /* Padding for header */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    border-radius: 5px; /* Rounded corners */
+}
+
+.dashboard-cards {
+    display: grid; /* Use grid layout for cards */
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Responsive columns */
+    gap: 20px; /* Gap between cards */
+    margin-top: 20px; /* Space above cards */
+}
+
+.card {
+    background: white; /* White background for cards */
+    border-radius: 5px; /* Rounded corners */
+    padding: 20px; /* Padding for card content */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+    transition: transform 0.3s; /* Transition for hover effect */
+}
+
+.card:hover {
+    transform: translateY(-5px); /* Lift effect on hover */
+}
+
+.card h3 {
+    margin-bottom: 10px; /* Spacing below card title */
+    color: #1a73e8; /* Card title color */
+}
+
+.card p {
+    font-size: 24px; /* Larger font size for metrics */
+    font-weight: bold; /* Bold font for emphasis */
+}
+
+h2 {
+    margin-top: 40px; /* Space above section headings */
+    color: #333; /* Dark color for headings */
+}
+
+canvas {
+    border-radius: 5px; /* Rounded corners for canvas */
+    background: white; /* White background for better contrast */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+}

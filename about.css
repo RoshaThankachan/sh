@@ -1,0 +1,144 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4; /* Light grey background */
+    color: #333; /* Dark text */
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding: 10px 0;
+}header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333; /* Dark background for the header */
+    padding: 10px 20px; /* Padding for the header */
+    color: #fff; /* White text color */
+}
+
+.logo h1 {
+    margin: 0; /* Remove default margin */
+    font-size: 2em; /* Logo font size */
+}
+
+nav ul {
+    list-style: none; /* Remove bullet points */
+    padding: 0; /* Remove default padding */
+    margin: 0; /* Remove default margin */
+    display: flex; /* Flexbox for horizontal alignment */
+}
+
+nav ul li {
+    margin: 0 15px; /* Spacing between menu items */
+}
+
+nav a {
+    color: white; /* White text for links */
+    text-decoration: none; /* Remove underline */
+    font-weight: bold; /* Bold text */
+    transition: color 0.3s; /* Transition for hover effect */
+}
+
+nav a:hover {
+    color: #ffcc00; /* Change color on hover */
+}
+
+.header-actions {
+    display: flex; /* Flexbox for any action items like search or icons */
+    align-items: center; /* Center items vertically */
+}
+/* Footer Styles */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding-top: 10px;
+    padding-right: 0px;
+    padding-bottom: 10px;
+    padding-left: 0px;
+    height: 77.6px;
+}
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    unicode-bidi: isolate;
+}
+/* About Section */
+#about {
+    padding: 40px 20px;
+    max-width: 800px;
+    margin-top: 70px;
+    margin-left: 350px;
+    margin-bottom: 70px;
+    background: #ffffff; /* White background */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+#about {
+   
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+ h2 {
+    font-size: 36px;
+    margin-left: 600px;
+    margin-top: 80px;
+    color: #333;
+}
+
+
+
+.about-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-bottom: 70px; /* Space below container */
+}
+
+.about-content {
+    flex: 1;
+    padding: 20px;
+}
+
+.about-image {
+    flex: 1;
+    text-align: center;
+}
+
+.about-image img {
+    max-width: 100%;
+    border-radius: 8px; /* Rounded corners for the image */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for the image */
+}
+
+/* Mission and Values Section */
+.mission-section, .values-section, .team-section {
+    background: #e9ecef; /* Light grey background for sections */
+    border-radius: 8px; /* Rounded corners */
+    padding: 20px;
+    margin: 20px 0; /* Margin between sections */
+}
+
+h3 {
+    color: #007BFF; /* Blue for headings */
+    margin-bottom: 10px; /* Space below heading */
+}
+
+.values-section ul {
+    list-style-type: disc;
+    margin-left: 20px; /* Indent for list */
+}

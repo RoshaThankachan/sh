@@ -1,0 +1,188 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif; /* Font family */
+    background-color: #f0f2f5; /* Light gray background */
+    margin: 0; /* Remove default margin */
+    display: flex; /* Flexbox layout */
+}
+
+/* Sidebar Styles */
+.sidebar {
+    width: 250px; /* Fixed width for sidebar */
+    height: 100vh; /* Full height */
+    background: linear-gradient(to bottom, #1a73e8, #4285f4); /* Gradient background */
+    color: white; /* White text in sidebar */
+    padding: 20px; /* Padding around content */
+    position: fixed; /* Fixed position */
+    box-shadow: 4px 0 12px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease;
+}
+
+.sidebar h2 {
+    text-align: center; /* Centered heading */
+    color: #ffffff; /* White text for the heading */
+    font-weight: 700; /* Bold font */
+    font-size: 26px; /* Font size for heading */
+    margin-bottom: 30px; /* Margin below heading */
+}
+
+.sidebar ul {
+    list-style: none; /* Remove bullet points */
+    padding: 0; /* Remove padding */
+}
+
+.sidebar ul li {
+    margin: 20px 0; /* Spacing between links */
+}
+
+.sidebar ul li a {
+    color: white; /* Soft grayish-blue for links */
+    text-decoration: none; /* Remove underline */
+    font-size: 16px; /* Font size for links */
+    padding: 12px 20px; /* Padding for clickable area */
+    display: block; /* Block-level for easy clicking */
+    border-radius: 6px; /* Rounded corners */
+    transition: background-color 0.3s; /* Transition effect */
+}
+
+.sidebar ul li a:hover,
+.sidebar ul li a.active {
+    background-color: #1a01fe; /* Teal for hover/active state */
+    color: white; /* White text on hover */
+}
+
+
+/* Main Content Styles */
+.main-content {
+    margin-left: 250px;
+    padding: 40px;
+    width: calc(100% - 250px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #ffffff;
+    min-height: 100vh;
+    transition: margin-left 0.3s;
+}
+
+.header h1 {
+    font-size: 32px;
+    font-weight: 700;
+    color:#007bff;
+    margin: 0;
+    padding: 15px 0;
+    text-align: center;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.header {
+    width: 100%; /* Full width for header */
+    display: flex;
+    justify-content: center; /* Center header content */
+}
+.header p {
+    font-size: 18px;
+    color: #666;
+    margin: 5px 0 20px;
+    text-align: center;
+}
+
+/* Basic form styles */
+.inventory-form {
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 90%; /* Limit the width of the form */
+    margin: 20px auto; /* Center the form */
+}
+
+/* Grouping form fields */
+.form-group {
+    margin-bottom: 15px;
+}
+
+/* Label styles */
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 600; /* Bold labels */
+    color: #333;
+}
+
+/* Input styles */
+.form-group input,
+.form-group textarea {
+    width: 100%; /* Full-width inputs */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px; /* Increase font size for readability */
+    transition: border-color 0.3s; /* Smooth transition on focus */
+}
+
+/* Textarea specific styles */
+.form-group textarea {
+    resize: vertical; /* Allow vertical resizing only */
+    height: 80px; /* Default height for textarea */
+}
+
+/* Focus styles */
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: #4caf50; /* Change border color on focus */
+    outline: none; /* Remove default outline */
+}
+
+/* Button styles */
+.btn-submit,
+.btn-cancel {
+    display: inline-block;
+    padding: 10px 15px;
+    margin-right: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-decoration: none;
+    font-weight: bold;
+    text-align: center; /* Center the text */
+}
+
+.btn-submit {
+    background-color: #4caf50; /* Green */
+    color: #fff;
+}
+
+.btn-cancel {
+  
+    background-color: #f44336; /* Red */
+    color: #fff;
+    width:100px;
+    height: 15px;
+}
+
+.btn-submit:hover {
+    background-color: #45a049; /* Darker green */
+}
+
+.btn-cancel:hover {
+    background-color: #d32f2f; /* Darker red */
+}
+
+/* Additional styling for responsive design */
+@media (max-width: 768px) {
+    .inventory-form {
+        padding: 15px; /* Adjust padding on smaller screens */
+    }
+
+    .form-group input,
+    .form-group textarea {
+        font-size: 14px; /* Slightly smaller font size on small screens */
+    }
+
+    .btn-submit,
+    .btn-cancel {
+        padding: 8px 12px; /* Adjust button size on smaller screens */
+    }
+}

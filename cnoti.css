@@ -1,0 +1,172 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333; /* Dark background for the header */
+    padding: 10px 20px; /* Padding for the header */
+    color: #fff; /* White text color */
+}
+
+.logo h1 {
+    margin: 0; /* Remove default margin */
+    font-size: 2em; /* Logo font size */
+}
+
+nav ul {
+    list-style: none; /* Remove bullet points */
+    padding: 0; /* Remove default padding */
+    margin: 0; /* Remove default margin */
+    display: flex; /* Flexbox for horizontal alignment */
+}
+
+nav ul li {
+    margin: 0 15px; /* Spacing between menu items */
+    display: inline;
+}
+
+nav a {
+    color: white; /* White text for links */
+    text-decoration: none; /* Remove underline */
+    font-weight: bold; /* Bold text */
+    transition: color 0.3s; /* Transition for hover effect */
+}
+
+nav a:hover {
+    color: #ffcc00; /* Change color on hover */
+}
+
+header .logo h1 {
+    margin: 0;
+}
+
+header li {
+    display: inline;
+    margin: 0 7px;
+}
+
+header a {
+    color: #fff;
+    text-decoration: none;
+}
+p{
+    text-align: center;
+}
+/* Footer Styles */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding-top: 10px;
+    padding-right: 0px;
+    padding-bottom: 10px;
+    padding-left: 0px;
+    height: 77.6px;
+  
+}
+
+
+.footer-content p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    unicode-bidi: isolate;
+   
+}
+.customer-notifications {
+    margin-top: 70px;
+    max-width: 600px;
+  margin-left: 500px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.customer-notifications h2 {
+    text-align: center;
+    color: #333;
+}
+
+.notifications-container {
+   
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.notification-card {
+    background-color: #ffffff;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+}
+
+.notification-date {
+    font-size: 0.9em;
+    color: #888;
+    margin-bottom: 5px;
+}
+
+.notification-message {
+    font-size: 1em;
+    color: #333;
+}
+/* Redirect Button Section Styling */
+.redirect-button {
+    display: flex;
+    justify-content: center; /* Center align the button horizontally */
+    align-items: center; /* Center align the button vertically */
+    margin-top: 30px; /* Add space above the button */
+    margin-left: 100px;
+}
+
+.redirect-button form {
+    display: inline-block; /* Ensures form is aligned with the button */
+}
+
+.redirect-button .btn {
+    padding: 12px 30px; /* Increase padding for better button size */
+    background-color: #3498db; /* Blue background color */
+    color: white; /* White text color */
+    font-size: 16px; /* Slightly larger font size for better readability */
+    border: none; /* Remove border */
+    border-radius: 8px; /* Rounded corners */
+    cursor: pointer; /* Change cursor to pointer to indicate interactivity */
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth hover effect */
+    text-transform: uppercase; /* Uppercase text for the button */
+}
+
+.redirect-button .btn:hover {
+    background-color: #2980b9; /* Darker blue on hover */
+    transform: scale(1.05); /* Slightly enlarge the button on hover */
+}
+
+.redirect-button .btn:focus {
+    outline: none; /* Remove the default focus outline */
+    box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.5); /* Add a custom focus outline */
+}
+
+.redirect-button .btn:active {
+    transform: scale(0.98); /* Slight shrink effect on button click */
+}

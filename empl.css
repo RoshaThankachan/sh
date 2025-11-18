@@ -1,0 +1,145 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #f4f4f4;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    color: #333;
+}
+
+.topbar {
+    width: 100%;
+    background-color:#2980b9;
+    padding: 15px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+
+.topbar h2 {
+    color: #ecf0f1;
+    text-align: center;
+    margin: 0;
+}
+
+.topbar ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+.topbar ul li {
+    padding: 10px 20px;
+}
+
+.topbar ul li a {
+    color: #ecf0f1;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px 15px;
+    display: block;
+    transition: background-color 0.3s ease;
+}
+
+.topbar ul li a:hover,
+.topbar ul li a.active {
+    background-color: #34495e;
+    border-radius: 5px;
+}
+
+.topbar ul li a i {
+    margin-right: 8px;
+}
+
+.main-content {
+    padding-top: 100px; /* Push content down to avoid overlap with the fixed topbar */
+    padding: 20px;
+    background-color: #fff;
+    flex-grow: 1;
+    min-height: 100vh;
+    margin-top: 150px;
+}
+
+.main-content .header {
+    background-color: #2980b9;
+    color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.main-content .header h1 {
+    margin-bottom: 10px;
+}
+
+.employee-details {
+    margin-top: 70px; /* Adds space between topbar and employee details */
+    background-color: #ecf0f1;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.employee-details table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.employee-details table th, .employee-details table td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #bdc3c7;
+}
+
+.employee-details table th {
+    background-color: #bdc3c7;
+}
+
+.employee-details table td {
+    background-color: #ecf0f1;
+}
+
+.employee-details table tr:hover {
+    background-color: #bdc3c7;
+}
+
+@media (max-width: 768px) {
+    .topbar ul {
+        flex-direction: column;
+    }
+
+    .topbar ul li {
+        text-align: center;
+    }
+}
+
+@media (max-width: 600px) {
+    .topbar ul li a {
+        font-size: 16px;
+        padding: 10px;
+    }
+
+    .topbar ul {
+        flex-direction: column;
+    }
+}
+.edit-button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.edit-button:hover {
+    background-color: #0056b3;
+}
